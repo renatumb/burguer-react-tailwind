@@ -44,4 +44,8 @@
     .paragraph {
         @apply text-paragraphColor text-xs
     }
+
+    .hover_active:hover, .hover_active.active {
+        @apply bg-secondaryColor text-blackColor
+    }
 }
