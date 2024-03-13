@@ -11,19 +11,20 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import {GetImage} from "../../utils/GetImage.tsx";
 
 export default function Review() {
     const reviews: string[] = [
-        './src/assets/img/review-1.jpg',
-        './src/assets/img/review-2.jpg',
-        './src/assets/img/review-3.jpg',
-        './src/assets/img/review-4.jpg',
-        './src/assets/img/review-5.jpg',
-        './src/assets/img/review-1.jpg',
-        './src/assets/img/review-2.jpg',
-        './src/assets/img/review-3.jpg',
-        './src/assets/img/review-4.jpg',
-        './src/assets/img/review-5.jpg'
+        'review-1.jpg',
+        'review-2.jpg',
+        'review-3.jpg',
+        'review-4.jpg',
+        'review-5.jpg',
+        'review-1.jpg',
+        'review-2.jpg',
+        'review-3.jpg',
+        'review-4.jpg',
+        'review-5.jpg'
     ]
     return (
         <section id="review" className="bg-primaryColorLight dark:bg-darkColorLight py-20">
@@ -63,7 +64,7 @@ export default function Review() {
                                 <div className="flex flex-col gap-5 rounded-lg p-6 bg-primaryColor dark:bg-darkColor">
                                     <p className="paragraph">Some review here here here here here</p>
                                     <div className="flex  items-center ">
-                                        <img src={el} className="size-12 rounded-full "/>
+                                        <img src={GetImage(el)} className="size-12 rounded-full "/>
                                         <div className="ml-2 ">
                                             <p className="font-oswald uppercase">Name</p>
                                             <p className="paragraph">Profession</p>

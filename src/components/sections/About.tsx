@@ -1,6 +1,6 @@
-import about from "./../../assets/img/about.jpg"
 import {faCheck} from "@fortawesome/free-solid-svg-icons";
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {GetImage} from "../../utils/GetImage.tsx";
 
 export default function About() {
 
@@ -8,7 +8,7 @@ export default function About() {
         <section id="about">
             <div className="container flex flex-col gap-10 md:flex-row ">
                 <div className="flex-1">
-                    <img src={about} className="rounded-xl"/>
+                    <img src={ GetImage('about.jpg') } className="rounded-xl"/>
                 </div>
 
                 <div className="flex-1">
