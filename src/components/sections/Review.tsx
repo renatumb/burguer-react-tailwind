@@ -26,7 +26,7 @@ export default function Review() {
         './src/assets/img/review-5.jpg'
     ]
     return (
-        <section id="review" className="bg-primaryColorLight py-20">
+        <section id="review" className="bg-primaryColorLight dark:bg-darkColorLight py-20">
             <div className="container">
                 <div className="max-w-md mx-auto text-center mb-6">
                     <h2 className="section__title">Customer Review</h2>
@@ -56,11 +56,11 @@ export default function Review() {
                         1024: {slidesPerView: 3, spaceBetween: 20},
                     }}
                 >
-                    {reviews.map(el => {
-                        console.log(el)
+                    {reviews.map((el,index) => {
+                        //console.log(el)
                         return (
-                            <SwiperSlide>
-                                <div className="flex flex-col gap-5 rounded-lg p-6 bg-primaryColor">
+                            <SwiperSlide key={index}>
+                                <div className="flex flex-col gap-5 rounded-lg p-6 bg-primaryColor dark:bg-darkColor">
                                     <p className="paragraph">Some review here here here here here</p>
                                     <div className="flex  items-center ">
                                         <img src={el} className="size-12 rounded-full "/>

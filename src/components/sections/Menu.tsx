@@ -81,10 +81,10 @@ export default function Menu() {
                     </p>
 
                     <ul id="items_menu" className="flex flex-row flex-wrap justify-center gap-3 py-10">
-                        <li onClick={clickMenu} className="btn bg-primaryColorLight hover_active active" data-category={CATEGORY.ALL}>All</li>
-                        <li onClick={clickMenu} className="btn bg-primaryColorLight hover_active"        data-category={CATEGORY.FOOD}>Food</li>
-                        <li onClick={clickMenu} className="btn bg-primaryColorLight hover_active"        data-category={CATEGORY.SNACK}>Snack</li>
-                        <li onClick={clickMenu} className="btn bg-primaryColorLight hover_active"        data-category={CATEGORY.BEVERAGE}>Beverage</li>
+                        <li onClick={clickMenu} className="btn bg-primaryColorLight dark:bg-darkColorLight hover_active active" data-category={CATEGORY.ALL}>All</li>
+                        <li onClick={clickMenu} className="btn bg-primaryColorLight dark:bg-darkColorLight hover_active"        data-category={CATEGORY.FOOD}>Food</li>
+                        <li onClick={clickMenu} className="btn bg-primaryColorLight dark:bg-darkColorLight hover_active"        data-category={CATEGORY.SNACK}>Snack</li>
+                        <li onClick={clickMenu} className="btn bg-primaryColorLight dark:bg-darkColorLight hover_active"        data-category={CATEGORY.BEVERAGE}>Beverage</li>
                     </ul>
                 </div>
                 <div>
@@ -93,7 +93,7 @@ export default function Menu() {
                         {allItems &&
                             allItems.map((menuItem) => (
                                 <li className={menuItem.hidden} key={menuItem.id}>
-                                    <div className="h-56 grid place-items-center bg-primaryColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
+                                    <div className="h-56 grid place-items-center bg-primaryColorLight dark:bg-darkColorLight rounded-3xl hover:bg-secondaryColor ease-linear duration-200 lg:h-40">
                                         <img src={menuItem.imageUrl} className=" w-40 hover:scale-110 ease-linear duration-200 md:w-48 lg:w-24"/>
                                     </div>
 
